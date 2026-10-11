@@ -1,0 +1,323 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Do Zero ao Check-in</title>
+<meta name="description" content="O guia prático para juntar milhas com o que você já gasta no cartão e emitir sua primeira passagem em 30 dias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-plane" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 15.6v-1.9l-8.2-5.1V3.3c0-.8-.6-1.5-1.3-1.5s-1.3.7-1.3 1.5v5.3l-8.2 5.1v1.9l8.2-2.6v5.2l-2.1 1.5v1.5L12 20.6l3.4 1.1v-1.5l-2.1-1.5v-5.2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.5l5 5 10-11"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h4"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 8h13l-3-3M20 16H7l3 3"/></symbol>
+  <symbol id="i-ticket" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 7.5h18v3a1.5 1.5 0 000 3v3H3v-3a1.5 1.5 0 000-3zM14.5 7.5v9"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3.5L2.5 20h19z" stroke-linejoin="round"/><path d="M12 10v4.5M12 17.2v.1"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3l7.5 3v5.5c0 4.5-3.2 8.2-7.5 9.5-4.3-1.3-7.5-5-7.5-9.5V6z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 11h10.6l2-8H6.6"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></g></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7h8M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01" stroke-linecap="round" stroke-width="2.2"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2" stroke-linejoin="round"/></g></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20h16M7 16v-5M12 16V7M17 16v-8"/></g></symbol>
+</svg>
+
+
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="h-hero">Sua próxima <span class="serif grad">viagem</span> já está passando no seu cartão.</h1>
+      <p class="lead">Em 30 dias você sai do zero: começa a juntar milhas com o que já gasta no mês e aprende a emitir passagem pagando menos do que pagaria em dinheiro. Sem cartão black, sem planilha complicada.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#oferta">Quero embarcar nessa <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn ghost" href="#oferta">Ver o que você leva de bônus</a>
+      </div>
+      <div class="chips">
+        <span><svg><use href="#i-check"/></svg>Acesso imediato</span>
+        <span><svg><use href="#i-check"/></svg>Feito para iniciantes</span>
+        <span><svg><use href="#i-check"/></svg>5 bônus de presente</span>
+      </div>
+    </div>
+
+    <div class="pass" role="img" aria-label="Cartão de embarque: de zero para check-in em 30 dias, passageiro você, assento 1A">
+      <div class="pass-body">
+        <div class="pass-row"><span>Cartão de embarque</span><span class="live">Embarque aberto</span></div>
+        <div class="route">
+          <div><small>DE</small><b>ZERO</b></div>
+          <div class="arc"><svg><use href="#i-plane"/></svg></div>
+          <div><small>PARA</small><b>CHECK-IN</b></div>
+        </div>
+        <div class="pass-grid">
+          <div>Passageiro<span>Você</span></div>
+          <div>Assento<span>1A</span></div>
+          <div>Voo<span>MC 030</span></div>
+          <div>Escala 1<span>Acumular</span></div>
+          <div>Escala 2<span>Cartão</span></div>
+          <div>Escala 3<span>Transferir</span></div>
+        </div>
+      </div>
+      <div class="pass-tear"></div>
+      <div class="pass-foot">
+        <div class="big grad">30<small>DIAS</small></div>
+        <div class="barcode"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LETREIRO -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Rio de Janeiro <svg><use href="#i-plane"/></svg></span><span>Lisboa <svg><use href="#i-plane"/></svg></span><span>Fernando de Noronha <svg><use href="#i-plane"/></svg></span><span>Paris <svg><use href="#i-plane"/></svg></span><span>Buenos Aires <svg><use href="#i-plane"/></svg></span><span>Porto <svg><use href="#i-plane"/></svg></span><span>Salvador <svg><use href="#i-plane"/></svg></span><span>Santiago <svg><use href="#i-plane"/></svg></span>
+    <span>Rio de Janeiro <svg><use href="#i-plane"/></svg></span><span>Lisboa <svg><use href="#i-plane"/></svg></span><span>Fernando de Noronha <svg><use href="#i-plane"/></svg></span><span>Paris <svg><use href="#i-plane"/></svg></span><span>Buenos Aires <svg><use href="#i-plane"/></svg></span><span>Porto <svg><use href="#i-plane"/></svg></span><span>Salvador <svg><use href="#i-plane"/></svg></span><span>Santiago <svg><use href="#i-plane"/></svg></span>
+  </div>
+</div>
+
+<!-- DOR -->
+<section aria-labelledby="h-dor">
+  <div class="wrap pain">
+    <figure class="photo-frame" style="margin:0">
+      <img src="img/aeroporto.jpg" alt="Viajante no saguão do aeroporto olhando um avião decolar" loading="lazy">
+      <figcaption class="photo-cap"><span>Enquanto isso</span><b>alguém está decolando com milhas que vieram do mercado do mês.</b></figcaption>
+    </figure>
+    <div class="pain-copy">
+      <span class="eyebrow">Seja sincero com você</span>
+      <h2 id="h-dor">Todo mês você passa o cartão. E <span class="serif grad">nada</span> volta pra você.</h2>
+      <ul class="pain-list">
+        <li><i><svg><use href="#i-x"/></svg></i>Você nem sabe em qual programa o seu cartão pontua, ou se pontua.</li>
+        <li><i><svg><use href="#i-x"/></svg></i>Vê "bônus de 80%" e não sabe se é oportunidade ou armadilha.</li>
+        <li><i><svg><use href="#i-x"/></svg></i>Já deixou pontos vencerem porque esqueceu que existiam.</li>
+        <li><i><svg><use href="#i-x"/></svg></i>Acha que milhas é coisa de quem tem cartão black e ganha muito.</li>
+        <li><i><svg><use href="#i-x"/></svg></i>Já emitiu com milhas uma passagem que sairia mais barata em dinheiro.</li>
+      </ul>
+      <p class="turn">O problema não é o seu salário. <span class="grad">É que ninguém te mostrou a conta.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="method" aria-labelledby="h-metodo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">O método</span>
+      <h2 id="h-metodo">Milha não é sorte. <span class="serif grad">É conta.</span></h2>
+      <p class="lead">Um caminho com 3 escalas e um destino. Você só avança quando a etapa anterior está pronta, e cada decisão sai de uma fórmula simples, não de achismo.</p>
+    </div>
+    <div class="flight">
+      <div class="flight-line" aria-hidden="true"><svg><use href="#i-plane"/></svg></div>
+      <div class="leg"><span class="dot"><svg><use href="#i-star"/></svg></span><span class="k">ESCALA 1</span><h3>Acumular pontos</h3><p>Com o que você já gasta, concentrado em um programa flexível como Livelo ou Esfera.</p></div>
+      <div class="leg"><span class="dot"><svg><use href="#i-card"/></svg></span><span class="k">ESCALA 2</span><h3>Escolher o cartão</h3><p>Você só troca se a conta fechar. A anuidade entra no cálculo, sem ilusão.</p></div>
+      <div class="leg"><span class="dot"><svg><use href="#i-swap"/></svg></span><span class="k">ESCALA 3</span><h3>Transferir com bônus</h3><p>Pontos viram milhas só em promoção, e só a quantidade que você vai usar.</p></div>
+      <div class="leg end"><span class="dot"><svg><use href="#i-ticket"/></svg></span><span class="k">DESTINO</span><h3>Emitir a passagem</h3><p>Comparando com o preço em dinheiro. Se a milha sair mais cara, você paga em reais.</p></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b class="grad">20% a 80%</b><p>Faixa de bônus de transferência nas promoções de 2026 analisadas no guia.</p></div>
+      <div class="stat"><b class="grad">2h35</b><p>É todo o tempo da primeira semana. Uns 20 minutos por dia.</p></div>
+      <div class="stat"><b class="grad">R$ 0</b><p>Para criar as contas e começar a acumular com o cartão que você já tem.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINOS -->
+<section style="padding-top:0" aria-labelledby="h-dest">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Dia 1 do guia</span>
+      <h2 id="h-dest">Tudo começa escolhendo <span class="serif grad">para onde</span> você quer ir.</h2>
+      <p class="lead">Sua viagem-alvo vira a sua meta de milhas. A partir dela, cada decisão do guia tem um porquê: qual cartão usar, quando transferir e quanto.</p>
+    </div>
+    <div class="dest">
+      <figure class="card-photo" style="margin:0"><img src="img/rio.jpg" alt="Pão de Açúcar e Baía de Guanabara, Rio de Janeiro" loading="lazy"><span class="tag">Nacional</span><figcaption><b>Rio de Janeiro</b><span>Brasil</span></figcaption></figure>
+      <figure class="card-photo" style="margin:0"><img src="img/paris.jpg" alt="Torre Eiffel ao entardecer às margens do Sena" loading="lazy"><span class="tag">Europa</span><figcaption><b>Paris</b><span>França</span></figcaption></figure>
+      <figure class="card-photo" style="margin:0"><img src="img/porto.jpg" alt="Cidade do Porto e ponte Dom Luís I ao pôr do sol" loading="lazy"><span class="tag">Europa</span><figcaption><b>Porto</b><span>Portugal</span></figcaption></figure>
+      <figure class="card-photo wide" style="margin:0"><img src="img/praia.jpg" alt="Praia de areia clara com mar azul-turquesa ao pôr do sol" loading="lazy"><span class="tag">Sua escolha</span><figcaption><b>Aquela praia que você sempre quis</b><span>Destino em aberto</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section class="light" aria-labelledby="h-dentro">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">O que tem dentro</span>
+      <h2 id="h-dentro">Tudo o que você precisa. <span class="serif">Nada</span> do que te confunde.</h2>
+      <p class="lead">15 páginas diretas, com tarefas curtas e um critério claro de "pronto" no fim de cada dia.</p>
+    </div>
+    <div class="bento">
+      <div class="tile book">
+        <div class="ebook" aria-hidden="true">
+          <div class="ebook-cover"><small>GUIA PRÁTICO · MILHAS CLUBE</small><div><b>Do zero<br>ao <em>check-in</em></b><div class="strip"></div></div><span class="pages"></span></div>
+        </div>
+        <div style="display:grid;gap:12px">
+          <span class="eyebrow">O guia</span>
+          <h3>3 partes, 7 passos, 5 fórmulas, 4 fichas.</h3>
+          <p>Leia na ordem, marque cada dia e no fim de 30 dias você sabe exatamente quando transferir e quando emitir.</p>
+        </div>
+      </div>
+      <div class="tile"><span class="ic"><svg><use href="#i-cal"/></svg></span><span class="pg">Pág. 3</span><h3>Mapa de 7 dias</h3><p>Um passo por dia, cerca de 20 minutos cada.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-target"/></svg></span><span class="pg">Pág. 4</span><h3>Sua viagem-alvo</h3><p>Pesquise um voo real e transforme em meta de milhas.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-shield"/></svg></span><span class="pg">Pág. 4</span><h3>Contas sem golpe</h3><p>Cadastro seguro e os golpes mais comuns para você nunca cair.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-cart"/></svg></span><span class="pg">Pág. 5</span><h3>Shopping do programa</h3><p>Pontos extras nas compras online que você já faz.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-calc"/></svg></span><span class="pg">Pág. 6 e 8</span><h3>Clube e cartão na ponta do lápis</h3><p>Descubra se a assinatura e a anuidade se pagam.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-chart"/></svg></span><span class="pg">Pág. 9</span><h3><span class="mini-bonus">Bônus</span> Ranking de cartões 2026</h3><p>Do Inter Gold grátis aos Visa Infinite, verificado em 06/10/2026.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-chat"/></svg></span><span class="pg">Pág. 10</span><h3><span class="mini-bonus">Bônus</span> Mensagem de isenção</h3><p>Copie, cole no chat do banco e peça desconto na anuidade.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-swap"/></svg></span><span class="pg">Pág. 11 e 12</span><h3><span class="mini-bonus">Bônus</span> Transferir com bônus</h3><p>As regras escondidas que fazem gente perder o bônus.</p></div>
+      <div class="tile"><span class="ic"><svg><use href="#i-list"/></svg></span><span class="pg">Pág. 13 e 14</span><h3>Checklist e <span class="mini-bonus">Bônus</span> fluxograma</h3><p>7 verificações e "Decida em 1 minuto" antes de emitir.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 30 DIAS -->
+<section aria-labelledby="h-plano">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Seu plano de voo</span>
+      <h2 id="h-plano">4 semanas para sair do zero e saber <span class="serif grad">exatamente</span> quando agir.</h2>
+    </div>
+    <div class="weeks">
+      <div class="week"><span class="n">01</span><span class="k">Semana 1 · A base</span><p>Os 7 passos da Parte 1: contas criadas, gastos concentrados, planilha pronta.</p></div>
+      <div class="week"><span class="n">02</span><span class="k">Semana 2 · Pontos extras</span><p>Portal de compras em toda compra online, com cada pontuação anotada.</p></div>
+      <div class="week"><span class="n">03</span><span class="k">Semana 3 · O cartão certo</span><p>Você compara seu cartão com 1 ou 2 opções e decide se pede outro.</p></div>
+      <div class="week last"><span class="n">04</span><span class="k">Semana 4 · Pronto para emitir</span><p>Acompanha promoções, calcula a transferência e escolhe a hora certa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section style="padding-top:0" aria-labelledby="h-quem">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Para quem é</span>
+      <h2 id="h-quem">Feito para quem está começando <span class="serif grad">do zero mesmo.</span></h2>
+    </div>
+    <div class="fit">
+      <div class="fit-col yes">
+        <h3>É para você se</h3>
+        <ul>
+          <li><svg><use href="#i-check"/></svg><span>Você tem cartão de crédito e paga a fatura inteira todo mês.</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Nunca juntou milhas, ou juntou e não sabe o que fazer com elas.</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Quer viajar mais sem gastar mais do que já gasta.</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Prefere um passo a passo claro a horas de vídeo no YouTube.</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Quer decidir com números, não com promessa de influenciador.</span></li>
+        </ul>
+      </div>
+      <div class="fit-col no">
+        <h3>Não é para você se</h3>
+        <ul>
+          <li><svg><use href="#i-x"/></svg><span>Você parcela a fatura ou entra no rotativo. Os juros custam mais do que qualquer milha rende.</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Procura viagem de graça garantida. Isso não existe, e o guia é honesto sobre isso.</span></li>
+          <li><svg><use href="#i-x"/></svg><span>Quer comprar e vender milhas como negócio. O foco aqui é emitir as suas passagens.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="offer" id="oferta" aria-labelledby="h-oferta">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">Seu cartão de embarque</span>
+      <h2 id="h-oferta">Uma passagem bem emitida <span class="serif grad">já paga o guia.</span></h2>
+    </div>
+    <div class="ticket">
+      <div class="ebook" aria-hidden="true">
+        <div class="ebook-cover"><small>GUIA PRÁTICO · MILHAS CLUBE</small><div><b>Do zero<br>ao <em>check-in</em></b><div class="strip"></div></div><span class="pages"></span></div>
+      </div>
+      <div class="ticket-list">
+        <h3>Você recebe</h3>
+        <ul>
+          <li><svg><use href="#i-check"/></svg><span>Guia completo em PDF, 15 páginas</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Mapa de 7 dias com critério de "pronto"</span></li>
+          <li><svg><use href="#i-check"/></svg><span>As 5 fórmulas que decidem cartão, transferência e emissão</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Plano de 30 dias, semana a semana</span></li>
+        </ul>
+        <h3 class="bonus-title"><span class="bonus-tag">+ Bônus</span>De presente, sem pagar nada a mais</h3>
+        <ul class="bonus-list">
+          <li><svg><use href="#i-star"/></svg><span><b>Bônus 1:</b> Ranking de cartões 2026, verificado em 06/10/2026</span></li>
+          <li><svg><use href="#i-star"/></svg><span><b>Bônus 2:</b> Fluxograma "Decida em 1 minuto" para qualquer promoção</span></li>
+          <li><svg><use href="#i-star"/></svg><span><b>Bônus 3:</b> Mensagem de isenção pronta para pedir desconto na anuidade</span></li>
+          <li><svg><use href="#i-star"/></svg><span><b>Bônus 4:</b> Guia de transferência com bônus: as regras escondidas que fazem gente perder a promoção</span></li>
+          <li><svg><use href="#i-star"/></svg><span><b>Bônus 5:</b> Planilha de controle e 4 fichas para imprimir</span></li>
+        </ul>
+      </div>
+      <div class="ticket-buy">
+        <span class="k">Pagamento único</span>
+        <div class="price"><sup>R$</sup>29<span class="cents">,90</span></div>
+        <a class="btn" href="#oferta">Quero embarcar agora</a>
+        <span class="small">Acesso imediato no seu e-mail</span>
+        <p class="small">No exemplo do guia, uma única passagem emitida com a conta certa economizou <b>R$ 133</b>.</p>
+      </div>
+    </div>
+    <div class="guarantee">
+      <div class="seal">7<small>DIAS</small></div>
+      <div>
+        <h3 style="margin-bottom:6px">Garantia incondicional de 7 dias</h3>
+        <p>Leia o guia e faça os primeiros passos. Se achar que não valeu, peça o reembolso em até 7 dias e você recebe 100% do valor de volta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="light" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 id="h-faq">Antes de você <span class="serif">decidir</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Preciso ter um cartão premium para começar?</summary><p>Não. O guia começa pelo cartão que você já tem e mostra como descobrir o que ele pontua. Se fizer sentido trocar, a Fórmula 2 mostra se a anuidade compensa. Para quem gasta até cerca de R$ 3 mil por mês, a orientação é priorizar cartão sem anuidade.</p></details>
+      <details><summary>Vou mesmo emitir uma passagem em 30 dias?</summary><p>Em 30 dias você monta toda a estrutura, começa a acumular e aprende a decidir quando transferir e emitir. Quanto você vai juntar depende do seu gasto, do seu cartão e das promoções do momento. O guia não promete viagem de graça: ele ensina a fazer a conta certa para você não perder dinheiro.</p></details>
+      <details><summary>Os dados de cartões e promoções não vão ficar desatualizados?</summary><p>Os números foram levantados em 06/10/2026 e o guia sempre indica conferir no site oficial. O mais valioso são as fórmulas e o método de decisão, que valem para qualquer cartão e qualquer promoção futura.</p></details>
+      <details><summary>Quanto tempo por dia eu preciso?</summary><p>A primeira semana soma 2h35 de tarefas, cerca de 20 minutos por dia. Depois disso é acompanhar promoções e usar o portal de compras quando for comprar online.</p></details>
+      <details><summary>Em que formato eu recebo?</summary><p>Um PDF de 15 páginas, enviado para o seu e-mail logo após a confirmação do pagamento. Dá para ler no celular ou imprimir as fichas.</p></details>
+      <details><summary>Isso é consultoria financeira?</summary><p>Não. É um conteúdo educativo que ensina o método e as contas. As decisões são suas, e o guia mostra como tomá-las com segurança.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" aria-labelledby="h-final">
+  <div class="wrap">
+    <h2 id="h-final">A próxima promoção vai chegar. <span class="serif grad">Você vai estar pronto?</span></h2>
+    <p class="lead">Promoções de transferência aparecem e somem em dias, às vezes em um único dia. Quem tem a base pronta aproveita. Quem não tem, vê passar.</p>
+    <a class="btn" href="#oferta">Quero meu cartão de embarque <svg><use href="#i-arrow"/></svg></a>
+    <div class="chips" style="justify-content:center">
+      <span><svg><use href="#i-check"/></svg>R$ 29,90 · pagamento único</span>
+      <span><svg><use href="#i-check"/></svg>Garantia de 7 dias</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Milhas Clube · Do zero ao check-in</p>
+    <p>Conteúdo educativo, não é consultoria financeira. Valores, anuidades, pontuações e promoções mudam sem aviso: confirme sempre no site oficial do banco ou do programa.</p>
+    <p class="credit">Fotos: Unsplash</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <div><b>R$ 29,90</b><small>acesso imediato</small></div>
+  <a class="btn" href="#oferta">Quero o guia</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
