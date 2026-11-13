@@ -221,47 +221,6 @@ figcaption small{display:block;color:var(--muted);font-size:.84rem}
 .benefit-list b{display:block;font-size:1.02rem;margin-bottom:4px}
 .benefit-list p{color:var(--muted);font-size:.92rem;line-height:1.5}
 
-/* 5.3 Segurando o entregável */
-.hold{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.hold-copy{display:grid;gap:24px;min-width:0}
-.hold-points{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.hold-points li{display:flex;align-items:center;gap:14px;font-weight:700}
-.hold-points .ic{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line-l);color:var(--rust)}
-.hold-points svg{width:22px;height:22px}
-.hold-scene{position:relative;min-height:540px;display:grid;place-items:center}
-.hold-scene::before{content:"";position:absolute;inset:8% 10%;border-radius:50%;background:radial-gradient(circle,rgba(255,148,56,.3),transparent 65%)}
-.phone{position:relative;z-index:1;width:250px;aspect-ratio:9/19;border-radius:42px;background:#0b0e18;padding:10px;margin-left:34%;transform:rotate(5deg);box-shadow:0 50px 80px -30px rgba(40,20,0,.55),inset 0 0 0 2px #2a3150}
-.phone::before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:84px;height:22px;border-radius:0 0 14px 14px;background:#0b0e18;z-index:2}
-.screen{height:100%;border-radius:33px;padding:46px 20px 28px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:
-  linear-gradient(180deg,rgba(10,14,28,.1) 0%,rgba(10,14,28,.9) 72%),
-  url("../img/hero-asa.jpg") center/cover}
-.screen small{font-family:var(--f-mono);font-size:.56rem;letter-spacing:.18em;opacity:.85}
-.screen b{font-family:var(--f-display);font-weight:800;font-size:2.3rem;line-height:.9;letter-spacing:-.05em}
-.screen em{font-family:var(--f-serif);font-weight:400;font-size:1.1em}
-.screen .strip{height:4px;border-radius:2px;background:var(--grad);margin-top:12px}
-.sheet{position:absolute;left:4%;top:12%;width:250px;padding:24px 22px;border-radius:6px;background:var(--paper);border:1px solid var(--line-l);box-shadow:0 30px 60px -30px rgba(80,50,20,.5);transform:rotate(-7deg);display:grid;gap:4px;color:var(--ink)}
-.sheet small{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;color:#B08A5E}
-.sheet b{font-family:var(--f-display);font-size:1.3rem;letter-spacing:-.03em;margin-bottom:10px}
-.sheet span{font-size:.76rem;color:var(--ink-2)}
-.sheet i{display:block;height:14px;border-bottom:1.5px dashed var(--line-l);margin-bottom:8px}
-.sheet .box{display:flex;align-items:center;gap:8px;margin-top:6px;font-weight:700;color:var(--ink)}
-.sheet .box::before{content:"";width:16px;height:16px;border:2px solid var(--rust);border-radius:4px}
-
-/* 5.4 Observação: sala VIP (registro pessoal, fora do conteúdo do guia) */
-.vip{padding-block:0 100px}
-.vip-note{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:44px;align-items:center;padding:34px 40px;border-radius:26px;background:var(--sand-2);border:1.5px dashed #D2B994}
-.vip-copy{display:grid;gap:14px;max-width:54ch}
-.note-tag{justify-self:start;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);padding:6px 12px;border-radius:999px;border:1px solid rgba(194,86,30,.4)}
-.vip-copy h3{font-size:1.5rem}
-.vip-copy p{color:var(--ink-2);font-size:1rem;line-height:1.6}
-.vip-copy p b{color:var(--ink)}
-.vip-photos{display:flex;justify-content:center;align-items:center;padding-block:4px 22px}
-.polaroid{width:150px;flex:none;padding:8px 8px 0;background:var(--paper);border-radius:5px;box-shadow:0 18px 34px -16px rgba(21,26,44,.45)}
-.polaroid img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:2px}
-.polaroid figcaption{padding:10px 2px 11px;text-align:center;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
-.polaroid.a{transform:translate(-4px,-8px) rotate(-5deg);z-index:1}
-.polaroid.b{transform:translate(4px,16px) rotate(4deg);z-index:2}
-
 /* 5.5 Bônus em detalhe */
 .bonus-rows{display:grid;gap:14px}
 .bonus-row{display:grid;grid-template-columns:70px 56px 1fr 230px;gap:22px;align-items:center;padding:22px 28px;border-radius:22px;background:var(--paper);border:1px solid var(--line-l)}
@@ -396,19 +355,17 @@ footer .wrap{padding-block:30px 110px;display:grid;gap:8px;text-align:center}
   .hero{padding-block:120px 70px;background:
     linear-gradient(0deg,var(--night) 8%,rgba(10,14,28,.78) 55%,rgba(10,14,28,.55) 100%),
     url("../img/por-do-sol.jpg") 30% 30%/cover no-repeat}
-  .hero-grid,.product,.benefits,.hold,.anchor,.rule,.sim{grid-template-columns:1fr}
+  .hero-grid,.product,.benefits,.anchor,.rule,.sim{grid-template-columns:1fr}
   .pass{justify-self:center}
   .milestones,.stats{grid-template-columns:1fr}
   .tiles,.weeks{grid-template-columns:1fr 1fr}
   .bonus-grid{grid-template-columns:1fr 1fr}
   .bonus-card:last-child{grid-column:1/-1}
   .photo-frame{aspect-ratio:16/11}
-  .hold-scene{min-height:480px}
   .bonus-row{grid-template-columns:56px 1fr;gap:16px 18px}
   .bonus-row .num{display:none}
   .bonus-row .when{grid-column:1/-1;justify-self:start}
   .proof-grid{grid-template-columns:1fr 1fr}
-  .vip-note{grid-template-columns:1fr;gap:26px}
   .trips{grid-template-columns:1fr 1fr}
   .ticket{grid-template-columns:1fr 1fr}
   .ticket .ebook{grid-column:1/-1;padding-block:40px 10px}
@@ -436,19 +393,8 @@ footer .wrap{padding-block:30px 110px;display:grid;gap:8px;text-align:center}
   .sim-in,.sim-out{padding:24px 20px}
   .sim-label{flex-wrap:wrap}
   .sim-out .row{flex-wrap:wrap}
-  .hold-scene{min-height:420px}
-  .phone{width:190px;margin-left:36%;border-radius:34px}
-  .screen{border-radius:26px;padding:40px 16px 22px}
-  .screen b{font-size:1.75rem}
-  .sheet{width:190px;padding:18px 16px;left:3%}
-  .sheet b{font-size:1.05rem}
   .bonus-row{padding:20px}
   .proof-grid{grid-template-columns:1fr;gap:28px}
-  .vip{padding-bottom:68px}
-  .vip-note{padding:26px 20px}
-  .vip-copy h3{font-size:1.3rem}
-  .polaroid{width:min(132px,36vw);padding:6px 6px 0}
-  .polaroid figcaption{font-size:.52rem;padding:8px 1px 9px}
   .trips{gap:12px}
   .trip{border-radius:18px}
   .trip figcaption{left:12px;right:12px;bottom:12px}
