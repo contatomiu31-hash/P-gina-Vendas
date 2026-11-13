@@ -255,6 +255,7 @@ figcaption small{display:block;color:var(--muted);font-size:.84rem}
 .vip-copy h3{font-size:1.5rem}
 .vip-copy p{color:var(--ink-2);font-size:1rem;line-height:1.6}
 .vip-copy p b{color:var(--ink)}
+.vip-copy .vip-short{display:none}
 .vip-photos{display:flex;justify-content:center;align-items:center;padding-block:4px 22px}
 .polaroid{width:150px;flex:none;padding:8px 8px 0;background:var(--paper);border-radius:5px;box-shadow:0 18px 34px -16px rgba(21,26,44,.45)}
 .polaroid img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:2px}
@@ -445,10 +446,16 @@ footer .wrap{padding-block:30px 110px;display:grid;gap:8px;text-align:center}
   .bonus-row{padding:20px}
   .proof-grid{grid-template-columns:1fr;gap:28px}
   .vip{padding-bottom:68px}
-  .vip-note{padding:26px 20px}
-  .vip-copy h3{font-size:1.3rem}
-  .polaroid{width:min(132px,36vw);padding:6px 6px 0}
-  .polaroid figcaption{font-size:.52rem;padding:8px 1px 9px}
+  .vip-note{grid-template-columns:1fr auto;gap:12px;padding:20px 16px 20px 20px}
+  .vip-copy{gap:10px}
+  .vip-copy h3{font-size:1.05rem}
+  .vip-copy .vip-long{display:none}
+  .vip-copy .vip-short{display:block;font-size:.88rem;line-height:1.45}
+  .note-tag{font-size:.6rem;padding:4px 10px}
+  .vip-photos{padding-block:6px 10px}
+  .polaroid{width:74px;padding:5px 5px 13px}
+  .polaroid + .polaroid{margin-left:-12px}
+  .polaroid figcaption{display:none}
   .trips{gap:12px}
   .trip{border-radius:18px}
   .trip figcaption{left:12px;right:12px;bottom:12px}
